@@ -1,0 +1,395 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+    margin-top: 0;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
+img {
+    display: block;
+    max-width: 100;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    font-style: normal;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.top-naigation {
+    display: flex;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    letter-spacing: 0.03em;
+
+    color: #000000;
+}
+
+.header-logo {
+    color: #000000;
+}
+
+.menu-list {
+    margin-left: 93px ;
+    display: flex;
+    padding-top: 32px;
+}
+ .menu-list > .item{
+margin-left: 54px;
+ }
+
+.header-contact {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+
+    color: #757575;
+}
+
+.list-contact {
+    display: flex;
+    margin-left: auto;
+}
+
+.list-contact > .item {
+    margin-left: 50px;
+}
+
+.link:hover,
+.link:focus {
+    color: #2196f3;
+}
+
+.nav {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+
+    color: #212121;
+}
+
+.link:hover,
+.link:focus {
+    color: #2196f3;
+}
+
+.section-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+}
+
+/* Герой */
+.hero {
+    background-color: #2F303A;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin-left: auto ;
+    margin-right: auto;
+    background-image: url(./images/Img\ \(1\).png);
+}
+
+.hero-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+
+    width: 696px;
+
+    margin: 0 auto 30px;
+}
+
+.hero-btn {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: #ffffff;
+
+    background-color: #2196f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    padding: 10px 24px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: #2195f3b9;
+}
+.advantages {
+    padding-top: 94px;
+}
+
+.attention-list {
+    display: flex;
+}
+
+.advantages-title {
+    font-style: normal;
+    font-weight: 700;
+
+    font-size: 14px;
+    line-height: 1.14;
+
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #212121;
+}
+
+.advantages-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+
+    letter-spacing: 0.03em;
+
+    color: #757575;
+}
+
+/* Чим ми займаємося  */
+.our-works {
+   
+}
+
+.our-works-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.our-works-list > .item {
+    flex-basis: calc((100% - 60px) / 3);
+}
+
+
+.our-teem {
+    background-color: #f5f4fa;
+    flex-basis: calc((100% - 90px) / 4);
+}
+
+.our-teem-title {
+    padding-top: 30px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+}
+
+.our-teem-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #757575;
+}
+
+.our-teem-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.our-teem-list >  .item{
+    flex-basis: calc((100% - 90px) / 4);
+}
+
+/* Футер */
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: #2f303a;
+}
+
+.logo {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+
+    letter-spacing: 0.03em;
+
+    color: #2196f3;
+
+    display: flex;
+}
+
+.logo-footer {
+    color: #ffffff;
+
+    display: flex;
+}
+
+.address {
+    color: #ffffff;
+
+    display: flex;
+}
+
+.footer-contact {
+    color: rgba(255, 255, 255, 0.6);
+
+    display: flex;
+}
+.filter-btn {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    color: #212121;
+    padding: 6px 24px; 
+    border: none;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+    color: white;
+    background-color: #2196f3;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+.list-btn{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.list-btn > .item{
+    margin-left: 8px;
+}
+
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.portfolio-list> .item{
+flex-basis: calc((100% - 60px) / 3);
+}
+
+.portfolio-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+    color: #212121;
+}
+
+.portfolio-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+
+    color: #757575;
+}
+
