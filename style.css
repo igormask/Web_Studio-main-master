@@ -45,6 +45,11 @@ a {
     font-style: normal;
 }
 
+.border{
+    border-bottom: 1px solid #ECECEC;
+}
+
+
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -91,7 +96,7 @@ a {
     padding-top: 32px;
 }
  .menu-list > .item{
-margin-left: 54px;
+  margin-left: 54px;
  }
 
 .header-contact {
@@ -325,6 +330,33 @@ border-radius: 2px;
     gap: 30px
 }
 
+.social-list {
+    display: inline-flex;
+    padding-bottom: 30px;
+}
+
+.social-item {
+    width: 44px;
+    height: 44px;
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    fill: #afb1b8;
+    background-color: #fff;
+}
+
+.social-link:hover,
+.social-link:focus {
+    fill: #fff;
+    background-color: #2196f3;
+}
+
 .our-teem-list >  .item{
     flex-basis: calc((100% - 90px) / 4);
     border-radius: 0px 0px 4px 4px;
@@ -449,3 +481,59 @@ border: 1px solid #EEE;
     color: #757575;
 }
 
+/* modal */
+
+/* modal */
+body.show-modal .backdrop {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+}
+
+body.show-modal .modal {
+    transform: scale(1);
+}
+
+.backdrop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 999;
+
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out;
+}
+
+.modal {
+    width: 528px;
+    height: 581px;
+    flex-shrink: 0;
+
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    }
+
+    .modal-close{
+        width: 18px;
+        height: 18px;
+        flex-shrink: 0; 
+        border-top: 6px;
+        border-bottom: 6px;
+        border-left: 6px;
+        border-right: 6pxv;
+    }
+
+    .button{
+        width: 18px;
+        height: 18px;
+        flex-shrink: 0;
+    }
