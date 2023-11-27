@@ -482,7 +482,7 @@ border: 1px solid #EEE;
 
 
 
-//* modal */
+/* modal */
 body.show-modal .backdrop {
     opacity: 1;
     visibility: visible;
@@ -575,4 +575,57 @@ body.show-modal .modal {
 .modal-button:focus {
     color: #2196f3;
     background-color: #fff;
+}
+
+/* Наші клієнти */
+.our-customers {
+    
+}
+
+.our-customers-title {
+
+}
+
+.our-customers-list {
+
+}
+
+.our-customers-list>.item {
+
+}
+
+.customers-link {
+
+}
+
+.customers-svg {
+
+}
+
+.hidden-content {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    opacity: 0;
+    transition: bottom 0.5s ease, opacity 0.5s ease;
+}
+
+.clickable-object:hover .hidden-content {
+    bottom: 0;
+    opacity: 1;
+}
+
+.hidden-paragraph {
+    color: white;
+    font-size: 18px;
+}
+
+.p-anim {
+    width: 322px;
+    position: absolute;
+    top: 63px;
+    left: 24px;
 }
