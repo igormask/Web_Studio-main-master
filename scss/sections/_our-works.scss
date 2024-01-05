@@ -1,0 +1,49 @@
+.our-works-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.item {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+}
+
+.our-works-list>.item {
+    flex-basis: calc((100% - 60px) / 3);
+}
+
+.our-teem {
+    background-color: #f5f4fa;
+    flex-basis: calc((100% - 90px) / 4);
+}
+
+.our-teem-title {
+    padding-top: 30px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.our-teem-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.our-teem-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
