@@ -108,8 +108,18 @@ a {
   display: flex;
   padding-top: 32px;
 }
+.menu-list__nav {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #212121;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 
-.menu-list > .item {
+.menu-list > .menu-list__item {
   margin-left: 54px;
 }
 
@@ -126,25 +136,13 @@ a {
   display: flex;
   margin-left: auto;
 }
-
-.list-contact > .item {
+.list-contact__item {
   margin-left: 50px;
 }
 
 .link:hover,
 .link:focus {
   color: #2196f3;
-}
-
-.nav {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: #212121;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .nav.current {
@@ -164,7 +162,7 @@ a {
 }
 
 .hero {
-  background-color: #2F303A;
+  background-color: #2f303a;
   background-position: center;
   background-repeat: no-repeat;
   max-width: 1600px;
@@ -175,8 +173,7 @@ a {
   margin-right: auto;
   background-image: url(../images/hero.png);
 }
-
-.hero-title {
+.hero__hero-title {
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
@@ -188,8 +185,7 @@ a {
   width: 696px;
   margin: 0 auto 30px;
 }
-
-.hero-btn {
+.hero__hero-btn {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -207,31 +203,14 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
-
-.hero-btn:hover,
-.hero-btn:focus {
+.hero__hero-btn:hover, .hero__hero-btn:focus {
   background-color: rgba(33, 149, 243, 0.7254901961);
-}
-
-.ikonka {
-  margin-bottom: 30px;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  border-radius: 4px;
-  background: #F5F4FA;
 }
 
 .advantages {
   padding-top: 94px;
 }
-
-.attention-list {
-  display: flex;
-}
-
-.advantages-title {
+.advantages__advantages-title {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -240,14 +219,25 @@ a {
   text-transform: uppercase;
   color: #212121;
 }
-
-.advantages-text {
+.advantages__attention-list {
+  display: flex;
+}
+.advantages__advantages-text {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+}
+.advantages__ikonka {
+  margin-bottom: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-radius: 4px;
+  background: #f5f4fa;
 }
 
 .our-works-list {
@@ -562,14 +552,13 @@ a {
 }
 
 .portfolio-list > .item {
+  width: 370px;
   flex-basis: calc((100% - 60px) / 3);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid #eee;
 }
 
 .portfolio-list > .item:hover,
 .portfolio-list > .item:focus {
-  border: 1px solid #eee;
-  background-color: #fff;
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
@@ -619,15 +608,6 @@ a {
 .portfolio-link:hover .portfolio-overlay,
 .portfolio-link:focus .portfolio-overlay {
   transform: translateY(0);
-}
-
-.overlay-text {
-  color: #fff;
-  font-size: 18px;
-  padding: 63px 24px;
-  font-weight: 400;
-  line-height: 1.55;
-  letter-spacing: 0.54px;
 }
 
 .overlay-text {

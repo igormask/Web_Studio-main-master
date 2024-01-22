@@ -5,17 +5,13 @@
 }
 
 .portfolio-list>.item {
+    width: 370px;
     flex-basis: calc((100% - 60px) / 3);
-
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid #eee;
 }
 
 .portfolio-list>.item:hover,
 .portfolio-list>.item:focus {
-    border: 1px solid #eee;
-    background-color: #fff;
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
         0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
@@ -45,6 +41,7 @@
 
     color: #757575;
 }
+
 .tex {
     width: 300px;
 }
@@ -80,15 +77,7 @@
     letter-spacing: 0.54px;
 }
 
-.overlay-text {
-    color: #fff;
-    font-size: 18px;
-    padding: 63px 24px;
-    font-weight: 400;
-    line-height: 1.55;
-    letter-spacing: 0.54px;
-}
-
+// modal
 .body.show-modal .backdrop {
     opacity: 1;
     visibility: visible;
