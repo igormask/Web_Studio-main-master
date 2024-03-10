@@ -1,5 +1,19 @@
 .our-teem {
     background-color: #f5f4fa;
+    @media screen and (min-width: 480px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .our-teem-list {
@@ -13,26 +27,71 @@
         font-weight: 500;
         font-size: 16px;
         line-height: 1.18;
+
         text-align: center;
         letter-spacing: 0.03em;
+
         color: #212121;
     }
 
-    &__oour-teem-text {
+    &__our-teem-text {
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 1.18;
+
         text-align: center;
         letter-spacing: 0.03em;
+
         color: #757575;
     }
 }
 
-.our-teem-list > .item {
-    flex-basis: calc((100% - 90px) / 4);
-    border-radius: 0 0 4px 4px;
+.our-teem-list > .our-teem-list__item {
+    border-radius: 0px 0px 4px 4px;
     background: #fff;
-    box-shadow: 0 2px 1px 0 rgb(0, 0, 0, 0.2), 0 1px 1px 0 rgb(0, 0, 0, 0.14),
-        0 1px 3px 0 rgb(0, 0, 0, 0.12);
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+    @media screen and (min-width: 480px) {
+        flex-basis: calc((100% - 30px) / 1);
+    }
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 90px) / 4);
+    }
+}
+
+.social-list {
+    justify-content: center;
+    display: flex;
+    padding-bottom: 30px;
+
+    &__social-item {
+        width: 44px;
+        height: 44px;
+    }
+
+    &__social-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        fill: #afb1b8;
+        background-color: #fff;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            fill: #fff;
+            background-color: #2196f3;
+        }
+    }
 }

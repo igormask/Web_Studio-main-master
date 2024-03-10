@@ -2,25 +2,55 @@
     background-color: #2f303a;
     background-position: center;
     background-repeat: no-repeat;
-    max-width: 1600px;
-    height: 600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
     margin-left: auto;
     margin-right: auto;
     background-image: url(../images/hero.png);
 
+    @media screen and (min-width: 480px) {
+        height: 400px;
+        padding-top: 118px;
+        padding-bottom: 118px;
+        max-width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+        height: 400px;
+        padding-top: 128px;
+        padding-bottom: 118px;
+        max-width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        height: 600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        max-width: 1600px;
+    }
+
     &__hero-title {
         font-style: normal;
         font-weight: 900;
-        font-size: 44px;
-        line-height: 60px;
+        line-height: 1.36;
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: #ffffff;
-        width: 696px;
         margin: 0 auto 30px;
+
+        @media screen and (min-width: 480px) {
+            font-size: 25px;
+            width: 380px;
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 307px;
+            font-size: 25px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 44px;
+            width: 696px;
+        }
     }
 
     &__hero-btn {
@@ -37,9 +67,20 @@
         box-shadow: 0 4px 4px rgb(0, 0, 0, 0.15);
         border-radius: 4px;
         cursor: pointer;
-        padding: 10px 24px;
         margin-left: auto;
         margin-right: auto;
+
+        @media screen and (min-width: 480px) {
+            padding: 10px 24px;
+        }
+
+        @media screen and (min-width: 768px) {
+            padding: 16px 24px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            padding: 10px 24px;
+        }
     }
 
     &__hero-btn:hover,
